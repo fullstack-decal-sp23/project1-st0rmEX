@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Troy's Website</title>
+    <author>Website by Troy Burad</author>
+</head>
+<body>
+    <div id=container>
+        <br>
+        <img src="RedbullPFP.jpg">
+        <h1>Troy Burad</h1>
+            <!-- Question 2. Fill this in with details about your degree, major(s), and coursework. Use at least 1 header tag (h3, b, or em). -->
+            <h2>About Me:</h2>
+            <h3>University of California, Berkeley</h3>
+            <em>Computer Science, BA GPA: 3.70.</em>
+            <p>Coursework: 61A, 61B, 16A, 16B, 70, 61C, 170</p>
+            <br>
+        <div class = "flex-view">
+            <div class="list-item">
+                <h4>Web Development</h4>
+                <ul>
+                    <li>WebDev Fullstack</li>
+                    <li>IEEE Fullstack</li>
+                    <li>Independent projects</li>
+                </ul>
+            </div>
+            <div class="list-item">
+                <h4>CAL D1 Valorant</h4>
+                <ul>
+                    <li>Head Coach for D1</li>
+                    <li>Qualified for RedbullCC LAN.</li>
+                    <li>Lots of experience playing & coaching tier 2</li>
+                </ul>
+            </div>
+            <div class="list-item">
+                <h4>Gym Stuff</h4>
+                <ul>
+                    <li>Bench 195</li>
+                    <li>Squat 255</li>
+                    <li>Deadlift 275</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <h2>Projects:</h2>
+        <div class="grid-view">
+            <div class="list-item">
+            <h4>Gitlet</h4>
+            <p>Basic version of git that works within a folder directoy.</p>
+            </div>
+            <div class="list-item">
+                <h4>Discord Bot</h4>
+                <p>Discord bot for games and hobbies.</p>
+                </div>
+            <div class="list-item">
+                <h4>Bear Fit</h4>
+                <p>Fitness app for trapping macros and exercise.</p>
+            </div>
+        </div>
+        </section>
+        <h2>Contact Info & Socials:</h2>
+        <h5>You can contact me here!</h5>
+        <div class="flex-view">
+            <div class="list-item">
+                <ul>
+                    <li>Email: buradtroy323@</li>
+                    <li>Phone: (310)303-2674</li>
+                    <li><a href='https://www.youtube.com/watch?v=CZCzSQ2bQys' target="blank">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <h2>Fun Useless Stuff</h2>
+        <button onclick='alert("ERRAH ERRAH")'>What sound did the DJ make when he got a computer error?</button>
+        <br><br>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <br><br>
+            <label for="favorite-food">Favorite Food:</label>
+            <input type="text" id="food">
+            <br><br>
+            <input type="submit">
+        </form>
+        <br>
+        <p id="count">Count: 0</p>
+        <button id="add-count">Increase Count</button>
+        <script>
+            let count = 0;
+            document.getElementById('add-count').addEventListener('click', () => {
+                count = count + 1;
+                document.getElementById('count').innerHTML = 'Count: ' + count;
+            })
+        </script>
+
+        <h6>Thanks for checking out my site!</h6>
+    </div>
+</body>
+</html>
